@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects — Rafayrehman</title>
+  <meta name="description" content="All projects by Rafayrehman, filterable by personal or academic and sortable by year." />
+  <link rel="stylesheet" href="../css/styles.css" />
+</head>
+<body>
+  <div class="frame">
+    <div class="canvas">
+
+      <!-- ===== nav ===== -->
+      <nav class="item nav" aria-label="Primary">
+        <a class="brand" href="../index.html">Rafay<b>rehman</b><span class="dot">.</span></a>
+        <ul class="nav-links">
+          <li><a class="is-current" href="index.html" aria-current="page">Projects</a></li>
+          <li><a href="../assets/docs/resume.pdf" download>Resume</a></li>
+          <li><a href="../assets/docs/cv.pdf" download>CV</a></li>
+          <li><a class="cta" href="../index.html#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- ===== page header ===== -->
+      <header class="item page-head">
+        <div class="eyebrow">Work</div>
+        <h1>Projects</h1>
+        <p>Filter by personal or academic, then sort by year. Click any card to open it.</p>
+      </header>
+
+      <!-- ===== controls ===== -->
+      <div class="item controls">
+        <div class="filters" role="tablist" aria-label="Filter projects">
+          <button class="filter-btn is-active" data-filter="all"      role="tab" aria-selected="true">All</button>
+          <button class="filter-btn"            data-filter="personal" role="tab" aria-selected="false">Personal</button>
+          <button class="filter-btn"            data-filter="academic" role="tab" aria-selected="false">Academic</button>
+        </div>
+        <div class="sort-wrap">
+          <span class="count" id="count"></span>
+          <label for="sort">Sort</label>
+          <select class="sort-select" id="sort">
+            <option value="newest">Newest first</option>
+            <option value="oldest">Oldest first</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- ===== grid (injected by js/projects.js) ===== -->
+      <div class="card-grid" id="projects-grid" aria-live="polite"></div>
+
+      <!-- ===== footer ===== -->
+      <footer class="item foot">
+        <span>&copy; <span id="year"></span> Rafayrehman</span>
+        <a href="https://github.com/Rafay-Rehman-1" target="_blank" rel="noopener">github.com/Rafay-Rehman-1</a>
+      </footer>
+
+    </div>
+  </div>
+
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  <script src="../js/projects.js"></script>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+  ========================  HOW TO ADD A PROJECT  ========================
+  1. Copy this whole "_template" folder and rename it to your project slug
+     (lowercase, dashes), e.g.  projects/personal/my-cool-thing/
+  2. Edit the bits marked  EDIT  below (title, year, category badge, text).
+  3. Add ONE line to  data/projects.json  so it shows in the list + featured:
+        { "slug": "my-cool-thing", "title": "My Cool Thing",
+          "year": 2025, "category": "personal", "featured": false }
+     (slug must match the folder name; category must match the parent folder)
+  Paths here use ../../../ because this page is 3 folders deep. Don't change them.
+  =======================================================================
+-->
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Project title — Rafayrehman</title> <!-- EDIT -->
+  <link rel="stylesheet" href="../../../css/styles.css" />
+</head>
+<body>
+  <div class="frame">
+    <div class="canvas">
+
+      <!-- nav -->
+      <nav class="item nav" aria-label="Primary">
+        <a class="brand" href="../../../index.html">Rafay<b>rehman</b><span class="dot">.</span></a>
+        <ul class="nav-links">
+          <li><a href="../../index.html">Projects</a></li>
+          <li><a href="../../../assets/docs/resume.pdf" download>Resume</a></li>
+          <li><a href="../../../assets/docs/cv.pdf" download>CV</a></li>
+          <li><a class="cta" href="../../../index.html#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <a class="item back-link" href="../../index.html">&larr; All projects</a>
+
+      <!-- header -->
+      <header class="item project-hero">
+        <div class="project-meta">
+          <span class="badge personal">personal</span> <!-- EDIT: personal / academic -->
+          <span class="year" style="font-size:.82rem">2025</span> <!-- EDIT: year -->
+        </div>
+        <h1>Project title</h1> <!-- EDIT -->
+        <p class="lede">
+          One or two sentences describing what this project is and why it matters. <!-- EDIT -->
+        </p>
+      </header>
+
+      <!-- body -->
+      <article class="item prose">
+        <h2>Overview</h2>
+        <p>Write the longer story here — the problem, your approach, the outcome.</p>
+
+        <div class="media">image / demo placeholder</div>
+
+        <h2>What I built</h2>
+        <ul>
+          <li>Key thing one</li>
+          <li>Key thing two</li>
+          <li>Key thing three</li>
+        </ul>
+
+        <h2>Links</h2>
+        <p><a href="#">Live demo</a> &middot; <a href="#">Source code</a></p>
+      </article>
+
+      <!-- footer -->
+      <footer class="item foot">
+        <span>&copy; <span id="year"></span> Rafayrehman</span>
+        <a href="https://github.com/Rafay-Rehman-1" target="_blank" rel="noopener">github.com/Rafay-Rehman-1</a>
+      </footer>
+
+    </div>
+  </div>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

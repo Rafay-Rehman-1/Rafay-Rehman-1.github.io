@@ -1,0 +1,6 @@
+[
+  { "slug": "project-x", "title": "Project X", "year": 2025, "category": "academic", "featured": true },
+  { "slug": "project-a", "title": "Project A", "year": 2024, "category": "personal", "featured": true },
+  { "slug": "project-y", "title": "Project Y", "year": 2023, "category": "academic", "featured": true },
+  { "slug": "project-b", "title": "Project B", "year": 2022, "category": "personal", "featured": false }
+]
